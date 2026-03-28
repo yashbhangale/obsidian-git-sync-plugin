@@ -1,0 +1,10 @@
+{
+  "id": "vault-git-sync",
+  "name": "Vault Git Sync",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Connect your vault to Git and commit & push with one button.",
+  "author": "",
+  "isDesktopOnly": true,
+  "styles": "styles.css"
+}

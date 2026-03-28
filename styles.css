@@ -1,0 +1,143 @@
+/* Settings */
+.vault-git-sync-settings__intro {
+  margin-bottom: 1.25em;
+  max-width: 42rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.vault-git-sync-settings__heading {
+  margin: 1.75rem 0 0.5rem;
+  font-size: var(--font-ui-medium);
+  font-weight: 600;
+  color: var(--text-normal);
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: 1.25rem;
+}
+
+.vault-git-sync-settings__heading:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.vault-git-sync-settings__card {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.vault-git-sync-settings__card-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  margin-bottom: 0.25rem;
+}
+
+.vault-git-sync-settings__card-path {
+  font-family: var(--font-monospace-theme);
+  font-size: var(--font-ui-smaller);
+  word-break: break-all;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+  line-height: 1.4;
+}
+
+.vault-git-sync-settings__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vault-git-sync-settings__check-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  font-size: var(--font-ui-small);
+}
+
+.vault-git-sync-settings__check-row.is-ok .vault-git-sync-settings__check-icon {
+  color: var(--color-green);
+}
+
+.vault-git-sync-settings__check-row.is-pending .vault-git-sync-settings__check-icon {
+  color: var(--text-faint);
+}
+
+.vault-git-sync-settings__check-icon {
+  flex-shrink: 0;
+  font-weight: 700;
+  width: 1.1rem;
+  text-align: center;
+}
+
+.vault-git-sync-settings__check-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.vault-git-sync-settings__check-detail {
+  margin-top: 0.2rem;
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  word-break: break-word;
+}
+
+.vault-git-sync-settings__warn {
+  color: var(--color-orange);
+  margin: 0;
+}
+
+.vault-git-sync-settings__input {
+  display: block;
+  width: 100%;
+  max-width: min(100%, 28rem);
+  margin-bottom: 0.5rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  font-size: var(--font-ui-small);
+  box-sizing: border-box;
+}
+
+.vault-git-sync-settings__author-actions {
+  margin: 0.35rem 0 0.75rem;
+}
+
+.vault-git-sync-settings__url-input {
+  min-width: 0;
+  flex: 1;
+}
+
+.vault-git-sync-settings .setting-item-control {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.vault-git-sync-settings__footer {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+}
+
+@media (max-width: 520px) {
+  .vault-git-sync-settings .setting-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vault-git-sync-settings .setting-item-control {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .vault-git-sync-settings .setting-item-control button {
+    width: 100%;
+  }
+}
